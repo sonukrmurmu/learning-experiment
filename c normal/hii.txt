@@ -1,0 +1,11 @@
+
+sudo ./palera1n-linux-x86_64 -v
+sudo ./palera1n-linux-x86_64 -l -v
+lsusb
+sudo systemctl stop usbmuxd
+sudo usbmuxd -p -f
+sudo sh -c 'echo -1 > /sys/module/usbcore/parameters/autosuspend'sudo sh -c 'echo -1 > /sys/module/usbcore/parameters/autosuspe
+nd'
+sudo modprobe -r apple-mfi-fastcharge
+[sonukrmurmu@sonukr ~]$ sudo modprobe -r apple-mfi-fastcharge
+[sonukrmurmu@sonukr ~]$ sudo systemctl stop fwupd

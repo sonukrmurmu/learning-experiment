@@ -8,7 +8,6 @@ int main(){
     binary(arr,target,low,high);
     return 0;
 }
-
 void binary(int arr[],int target, int low, int high){
     int mid = (low+high)/2;
     if(arr[mid] > target){
@@ -23,3 +22,4 @@ void binary(int arr[],int target, int low, int high){
     }
     printf("%d is the required index",mid);
 }
+
